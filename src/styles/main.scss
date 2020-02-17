@@ -1,0 +1,49 @@
+@import 'helpers/variables';
+@import 'helpers/mixins';
+@import 'helpers/functions';
+@import 'vendor/libs';
+@import 'base/fonts';
+@import 'base/general';
+@import '../blocks/components/components';
+@import '../blocks/modules/modules';
+
+.parallax {
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ccc;
+
+  &__image {
+    position: absolute;
+    top: -3%;
+    left: -3%;
+    height: 106%;
+    width: 106%;
+
+    &-00 {
+      background: url("https://i.postimg.cc/J0h7GjPw/layer-00.png") center no-repeat;
+      background-size: cover;
+    }
+    &-11 {
+      background: url("https://i.postimg.cc/tJmqP7Ms/layer-11.png") center no-repeat;
+      background-size: cover;
+    }
+    &-21 {
+      background: url("https://i.postimg.cc/t46qZqtg/layer-21.png") center no-repeat;
+      background-size: cover;
+    }
+    &-31 {
+      background: url("https://i.postimg.cc/Vs7L2Hkz/layer-31.png") center no-repeat;
+      background-size: cover;
+    }
+    &-41 {
+      background: url("https://i.postimg.cc/Qt8hypLB/layer-41.png") center no-repeat;
+      background-size: cover;
+    }
+  }
+}
